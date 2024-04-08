@@ -3,6 +3,7 @@ const wordText = document.querySelector(".word");
 //HTML buttons elements
 const refreshButton = document.getElementById("refresh");
 const submitButton = document.getElementById("submit");
+const inputField = document.querySelector("input");
 
 const wordSelector = () => {
     let rand = words[Math.floor(Math.random()*words.length)]; //this will select a random word from our words.js file
@@ -18,6 +19,7 @@ const wordSelector = () => {
     // j is going to be a random letter than isnt i (i + 1 means that j != i)
     // we then switch the positions of i and j which scrambles our word
     wordText.innerText = word;
+    correctWord = wordText.innerText;
 
 
     //button functionality
@@ -26,5 +28,12 @@ const wordSelector = () => {
         window.location.reload();
     }
     refreshButton.addEventListener("click", handleClick);
+
+    //submit
+    const checkWord = () => {
+        let userWord = inputField.value.toLocaleLowerCase();
+        console.log(userWord);
+    }
+    submitButton.addEventListener("click", checkWord);
 }
 wordSelector();
