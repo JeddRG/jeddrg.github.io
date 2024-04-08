@@ -1,2 +1,2 @@
-# JeddRG/WebTech
- Repo for Set08101 Web Technologies, hosting my webstie "scramble"
+# jeddrg.github.io
+ Repo for Set08101 Web Technologies, hosting my website "scramble"
