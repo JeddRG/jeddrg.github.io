@@ -7,4 +7,39 @@ body{
 	align-items: center;
 	justify-content: center;
 	min-height: 50vh;
+	background-color: DarkOrange;
+	
 }
+
+.container{
+	display: grid;
+	place-items: center;
+	border-radius: 15px;
+	background: Azure;
+	width: 400px;
+	padding: 15px;
+}
+
+.container .h1{
+	.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+}
+
+.content .word{
+	text-align: center;
+	letter-spacing: 25px;
+	text-transform: uppercase;
+}
+.content .submit{
+	text-align:center;
+}
+
+.content .buttons{
+	text-align:center;
+}
+/* Went through a lot of trial and error to sort out positioning and colour scheme but settled on this approch*/
+/* This should horizontally align with the center of the screen but will be positioned near the top of the page */
