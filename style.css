@@ -2,8 +2,7 @@
 /* This is a website which will host an anagram game called "Scramble" */
 /* This is the Css for the webpage */
 
-body{
-	display: table-cell;
-	margin: auto;
-	vertical-align: middle;
+container{
+	max-wdith: 500px;
+	margin:auto;
 }
