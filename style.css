@@ -60,14 +60,27 @@ body{
 }
 
 .content button{
-	border: none;
+	border: 1.5px solid transparent;
 	outline: none; 
 	padding: 5px 20px;
 	border-radius: 5px;
+	color:aliceblue;
 	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	font-style: normal;
 	background: LightSkyBlue;
+}
+
+#refresh:hover {
+	background-color:aliceblue;
+	border: 1.5px solid lightskyblue;
+	color: black;
+}
+
+#submit:hover{
+	background-color:aliceblue;
+	border: 1.5px solid lightskyblue;
+	color: black;
 }
 	
 	

@@ -3,7 +3,7 @@ const wordText = document.querySelector(".word");
 //HTML buttons elements
 const refreshButton = document.getElementById("refresh");
 const submitButton = document.getElementById("submit");
-const inputField = document.querySelector("input");
+const inputField = document.getElementById("input");
 
 const wordSelector = () => {
     let rand = words[Math.floor(Math.random()*words.length)]; //this will select a random word from our words.js file
@@ -19,10 +19,11 @@ const wordSelector = () => {
     // j is going to be a random letter than isnt i (i + 1 means that j != i)
     // we then switch the positions of i and j which scrambles our word
     wordText.innerText = word;
-    correctWord = wordText.innerText;
+    correctWord = rand;
+}
+wordSelector();
 
-
-    //button functionality
+ //button functionality
     //refresh
     function handleClick() {
         window.location.reload();
@@ -31,9 +32,20 @@ const wordSelector = () => {
 
     //submit
     const checkWord = () => {
-        let userWord = inputField.value.toLocaleLowerCase();
+        const userWord = inputField.value.toLocaleLowerCase();
         console.log(userWord);
     }
+
     submitButton.addEventListener("click", checkWord);
-}
-wordSelector();
+    
+    function wordCheck(){
+        const checkWord = () => {
+            const userWord = inputField.value.toLocaleLowerCase();
+            console.log(userWord);
+        }
+        if (userWord == correctWord){
+            window.alert("Correct! Well done on guessing the word, close and refresh to play again")
+        } else {
+            window.alert("Incorrect... close this window and try again. Good Luck!")
+        }
+    }
