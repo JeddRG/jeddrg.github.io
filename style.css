@@ -4,5 +4,6 @@
 
 container{
 	max-wdith: 500px;
-	margin:auto;
+	margin: auto;
+	padding: 10px;
 }
