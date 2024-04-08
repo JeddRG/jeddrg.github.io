@@ -3,6 +3,7 @@
 /* This is the Css for the webpage */
 
 body{
-	display: flex;
-	align-items: center;
+	display: table-cell;
+	margin: auto;
+	vertical-align: middle;
 }
