@@ -1,3 +1,8 @@
-<!-- Jedd Rixon Gibb 40485583 Coursework for SET08101 Web Technologies -->
-<!-- This is a website which will host an anagram game called "Scramble"-->
-<!-- This is the Css for the webpage-->
+/* Jedd Rixon Gibb 40485583 Coursework for SET08101 Web Technologies */
+/* This is a website which will host an anagram game called "Scramble" */
+/* This is the Css for the webpage */
+
+body{
+	display: flex;
+	align-items: center;
+}
