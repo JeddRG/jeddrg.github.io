@@ -1,32 +1,50 @@
 const words = [
     {
-        word: "scramble"
+        word: "piano"
     },
 
     {
-        word: "design"
+        word: "socks"
     },
 
     {
-        word: "website"
+        word: "pizza"
     },
 
     {
-        word: "technology"
+        word: "jerky"
     },
 
     {
-        word: "computing"
+        word: "quiff"
     },
 
     {
-        word: "napier"
+        word: "crazy"
     },
 
     {
-        word: "keyboard"
+        word: "field"
     },
 
+    {
+        word: "hijab"
+    },
 
+    {
+        word: "unzip"
+    },
+
+    {
+        word: "chuck"
+    },
+
+    {
+        word: "banjo"
+    },
+
+    {
+        word: "japan"
+    }
 
 ]
