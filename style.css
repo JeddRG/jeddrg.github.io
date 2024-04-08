@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+
 /* Jedd Rixon Gibb 40485583 Coursework for SET08101 Web Technologies */
 /* This is a website which will host an anagram game called "Scramble" */
 /* This is the Css for the webpage */
+
 
 body{
 	display: flex;
@@ -20,19 +24,20 @@ body{
 	padding: 15px;
 }
 
-.container .h1{
-	.fjalla-one-regular {
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.container{
+    font-family: "Bungee Spice", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-}
 
 .content .word{
 	text-align: center;
-	letter-spacing: 25px;
+	letter-spacing: 20px;
 	text-transform: uppercase;
+	font-family: "Bevan", serif;
+	font-weight: 400;
+	font-style: normal
 }
 .content .submit{
 	text-align:center;
