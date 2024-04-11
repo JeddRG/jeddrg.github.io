@@ -4,5 +4,7 @@
 
 const words = [
     {word: "piano"}, {word: "socks"}, {word: "pizza"}, {word: "jerky"}, {word: "quiff"}, {word: "crazy"},
-    {word: "field"}, {word: "hijab"}, {word: "unzip"}, {word: "chuck"}, {word: "banjo"}, {word: "japan"}
+    {word: "field"}, {word: "zebra"}, {word: "unzip"}, {word: "chuck"}, {word: "banjo"}, {word: "japan"},
+    {word: "ninja"}, {word: "newbs"}, {word: "lucky"}, {word: "lunch"}, {word: "laugh"}, {word: "tubby"},
+    {word: "taxes"}, {word: "texas"}, {word: "thyme"}, {word: "wedge"}, {word: "wreck"}, {word: "waive"},
 ]

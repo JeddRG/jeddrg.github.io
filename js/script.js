@@ -16,6 +16,9 @@
 // I have done a similar algorithm in a previous course, so while I did use this as inspiration, 
 // the only part I used from the video is line 46 as I hadn't used Math.floor.... before
 
+// The timer is based on the w3 schools countdown exmaple and a lot of trial and error
+// https://www.w3schools.com/howto/howto_js_countdown.asp
+
 
 const wordText = document.querySelector(".word");
 
