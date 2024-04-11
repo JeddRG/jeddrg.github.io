@@ -101,7 +101,7 @@ const wordSelector = () => {
         if (time == 0) {
             window.alert("Oh No! You ran out of time... Click 'OK' to try again");
             clearTimeout(timer);
-            doSomething();
+            window.location.reload();
         } else {
             timeButton.innerHTML = time;
             time--;
