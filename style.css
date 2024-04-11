@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 /* Jedd Rixon Gibb 40485583 Coursework for SET08101 Web Technologies */
 /* This is a website which will host an anagram game called "Scramble" */
@@ -33,6 +34,7 @@ body{
 .container{
     font-family: "Bungee Spice", sans-serif;
 	font-weight: 400;
+	font-size: 25px;
 	font-style: normal;
 	padding-bottom: 5%;
 }
@@ -45,8 +47,17 @@ body{
 	margin-right: -25px;
 	font-family: "Bevan", serif;
 	font-weight: 300;
+	font-size: 30px;
 	font-style: normal;
-	padding-bottom: 10%;
+}
+
+.content .timer{
+	text-align: center;
+	font-family: "Pixelify Sans", sans-serif;
+	font-size: 40px;
+  	font-optical-sizing: auto;
+  	font-weight: 500;
+  	font-style: normal;
 }
 .content input{
 	display: flex;
@@ -62,7 +73,7 @@ body{
 	justify-content: space-between;
 	margin-top: 5px;
 	margin-left: 15px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .content button{
