@@ -23,6 +23,7 @@ const wordText = document.querySelector(".word");
 const refreshButton = document.getElementById("refresh");
 const submitButton = document.getElementById("submit");
 const inputField = document.getElementById("input");
+const timeButton = document.getElementById('timer');
 
 //matching the button id's from indexHTML to variables in this script
 
@@ -57,9 +58,10 @@ const wordSelector = () => {
 
     //refresh
     function handleClick() {
-        let rand = words[Math.floor(Math.random()*words.length)]; 
+        time = 15;                  //this resets the counter when 'refresh is pressed, there is a 1 second delay because of line 99, unsure how to fix
         let word = rand.word.split("");
         randomise(word);
+        
     }
     // we are repeating lines 31 and 35 and then calling the randomise function in order to have a new Scrambled word for the user
     // I would prefer to functionalise everything so that I could just call each respective function, but I don't think I will have the time for that
@@ -94,20 +96,18 @@ const wordSelector = () => {
     //Here I have implmented the timer. It will be 30seconds and will only restart when the page is reloaded or the word is reloaded
 
     let time = 15;
-    const timeButton = document.getElementById('timer');
-    let timer = setInterval(countdown, 1000);
+    let timer = setInterval(countdown, 1000); // 1000 is milliseconds so 1 second passes everytime time-- occurs thus reducing time to 0 from 15
 
     function countdown(){
-        if (time == 0) {
-            window.alert("Oh No! You ran out of time... Click 'OK' to try again");
-            clearTimeout(timer);
-            window.location.reload();
+        if (time == 0) { // if time runs out this executes
+            window.alert("Oh No! You ran out of time... Click 'OK' to try again"); //alert to let the user know they ran out of time
+            clearTimeout(timer); //this clears the timer
+            window.location.reload(); // this will reload the page so that the timer starts again
         } else {
-            timeButton.innerHTML = time;
-            time--;
+            timeButton.innerHTML = time; // allows the countdown to be displayed 
+            time--; // decreases the time by 1
         }
     }
-    
     countdown();
     
 
