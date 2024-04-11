@@ -73,10 +73,16 @@ body{
 	font-style: normal;
 }
 
+.container .buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
 .content button{
-	display: inline-block;
+	width: calc(100% / 2 - 10px);
+	margin-top: 5px;
 	border: 1.5px solid transparent;
-	outline: none; 
+	outline: none;
 	padding: 5px 20px;
 	border-radius: 5px;
 	color:aliceblue;
@@ -85,6 +91,7 @@ body{
 	font-style: normal;
 	background: LightSkyBlue;
 }
+
 
 button:hover{ /* This is the hover for both buttons, It changes the colour when the users mouse is on a button in order to highlight it*/
 	background-color:aliceblue;

@@ -59,9 +59,9 @@ const wordSelector = () => {
     //refresh
     function handleClick() {
         time = 15;                  //this resets the counter when 'refresh is pressed, there is a 1 second delay because of line 99, unsure how to fix
+        let rand = words[Math.floor(Math.random()*words.length)];
         let word = rand.word.split("");
         randomise(word);
-        
     }
     // we are repeating lines 31 and 35 and then calling the randomise function in order to have a new Scrambled word for the user
     // I would prefer to functionalise everything so that I could just call each respective function, but I don't think I will have the time for that
@@ -109,9 +109,6 @@ const wordSelector = () => {
         }
     }
     countdown();
-    
-
-
     
 }
 wordSelector();
