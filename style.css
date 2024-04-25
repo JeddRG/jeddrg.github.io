@@ -66,7 +66,7 @@ body{
 
 .content input{ /* This is the user input box*/
 	display: flex;
-	width: 300px;
+	width: 450px;
 	text-align: center;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
@@ -77,6 +77,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
+
 
 .content button{
 	width: calc(100% / 2 - 10px);
@@ -98,6 +99,37 @@ button:hover{ /* This is the hover for both buttons, It changes the colour when 
 	border: 1.5px solid lightskyblue;
 	color: black;
 }
+
+.dropButton{
+
+	cursor: pointer;
+}
+
+.dropDown{
+	width: 450px;
+	position: fixed;
+	display: inline;
+	text-align:center;
+}
+
+.dropContent{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.dropContent a{
+	color: aliceblue;
+	display: block;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.show{display:block;}
 
 /* Went through a lot of trial and error to sort out positioning and colour scheme but settled on this approch*/
 /* This should horizontally align with the center of the screen but will be positioned near the top of the page */

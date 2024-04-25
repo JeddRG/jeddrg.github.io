@@ -63,7 +63,14 @@ const wordSelector = () => {
     function handleClick() {
         time = 15;                  //this resets the counter when 'refresh is pressed, there is a 1 second delay because of line 99, unsure how to fix
         let rand = words[Math.floor(Math.random()*words.length)];
+        console.log(rand);
+
         let word = rand.word.split("");
+        console.log(word);
+
+        correctWord = word.join('');
+        console.log(correctWord);
+
         randomise(word);
     }
     // we are repeating lines 31 and 35 and then calling the randomise function in order to have a new Scrambled word for the user
@@ -75,8 +82,8 @@ const wordSelector = () => {
     //submit
     const checkWord = () => {
         const userWord = inputField.value.toLocaleLowerCase();
-        console.log(userWord);
-        console.log(correctWord);
+        console.log(userWord); // these two lines have been used to debug what inputs are sent to console
+        console.log(correctWord); 
         function wordCheck(userWord, correctWord){
             if (userWord == correctWord){ //if the user solves the scramble then this statement will execute
                 window.alert("Correct! Well done on guessing the word, click 'OK' to play again"); //this is the text in the alert that pops up when the user inputs the corrcet word
@@ -112,6 +119,11 @@ const wordSelector = () => {
         }
     }
     countdown();
+
+
+    function myDropDown(){
+        document.getElementById("myDropDown").classList.toggle("show")
+    }
     
 }
 wordSelector();
