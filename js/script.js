@@ -27,6 +27,7 @@ const refreshButton = document.getElementById("refresh");
 const submitButton = document.getElementById("submit");
 const inputField = document.getElementById("input");
 const timeButton = document.getElementById('timer');
+const difficultyButton = document.getElementById('difficulty');
 
 //matching the button id's from indexHTML to variables in this script
 
@@ -121,24 +122,11 @@ const wordSelector = () => {
     countdown();
 
 
-    function myDropDown(){
-        document.getElementById("myDropDown").classList.toggle("show")
+    function myDropdown() {
+        document.getElementById("myDropDown").classList.toggle("show");
     }
+    difficultyButton.addEventListener("click", myDropdown);
+
     
 }
 wordSelector();
-
-
-
-
-// import swal from 'sweetalert2'
-// Swal.fire({
-//     title: 'Congratulations',
-//     text: 'You completed the Scramble! click "Awesome" to play again',
-//     icon: 'Success',
-//     confirmButtonText: 'Awesome'
-//   })
-
-//potentially using this to make the alert boxes fancier, but not sure yet.
-
-//
