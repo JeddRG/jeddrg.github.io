@@ -103,10 +103,12 @@ button:hover{ /* This is the hover for both buttons, It changes the colour when 
 
 .dropButton{
 	width:100%;
+	
 }
 
 .dropDown{
 	position: relative;
+	
 }
 
 .dropContent{
@@ -118,6 +120,7 @@ button:hover{ /* This is the hover for both buttons, It changes the colour when 
 	padding: 5px 20px;
 	border-radius: 5px;
 	background: LightSkyBlue;
+	
 }
 
 .dropContent a{

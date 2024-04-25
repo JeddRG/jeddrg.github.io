@@ -21,6 +21,8 @@
 
 
 const wordText = document.querySelector(".word");
+const wordTextsix = document.querySelector(".sixword");
+const wordTextsev = document.querySelector(".sevword");
 
 //HTML buttons elements
 const refreshButton = document.getElementById("refresh");
@@ -32,6 +34,8 @@ const difficultyButton = document.getElementById('difficulty');
 //matching the button id's from indexHTML to variables in this script
 
 const wordSelector = () => {
+
+    
 
         let rand = words[Math.floor(Math.random()*words.length)]; //this will select a random word from our words.js file and store as Object {word: "example"}
         console.log(rand); //checking the word is selected
@@ -121,11 +125,14 @@ const wordSelector = () => {
     }
     countdown();
 
-
+    //This is the function to toggle the drop down menu
     function myDropdown() {
         document.getElementById("myDropDown").classList.toggle("show");
+        //using the id for the dropdown menu allows this to toggle .show in style.css
+        //this adds display:block to the attribute for the menu and then it appears on screen
     }
     difficultyButton.addEventListener("click", myDropdown);
+    //this is the event listener which will call the function myDropdown when the difficulty button is selected
 
     
 }
