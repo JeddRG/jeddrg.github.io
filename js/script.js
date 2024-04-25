@@ -19,6 +19,9 @@
 // The timer is based on the w3 schools countdown exmaple and a lot of trial and error
 // https://www.w3schools.com/howto/howto_js_countdown.asp
 
+//The drop down menu was accomplished through a lot of editing, but it was based on the tutorial by W3 schools
+//https://www.w3schools.com/howto/howto_js_dropdown.asp
+
 
 const wordText = document.querySelector(".word");
 
@@ -75,9 +78,7 @@ const wordSelector = () => {
 
         randomise(word);
     }
-    // we are repeating lines 31 and 35 and then calling the randomise function in order to have a new Scrambled word for the user
-    // I would prefer to functionalise everything so that I could just call each respective function, but I don't think I will have the time for that
-    // so for now this is my implementation
+    // we are repeating our word selection and randomisation here
 
     refreshButton.addEventListener("click", handleClick,); //this is the event handler which allows us to add the functionality to the button
 
@@ -105,7 +106,7 @@ const wordSelector = () => {
 
     //Timer
 
-    //Here I have implmented the timer. It will be 30seconds and will only restart when the page is reloaded or the word is reloaded
+    //Here I have implmented the timer. It will be 15seconds and will only restart when the page is reloaded or the word is reloaded
 
     let time = 15;
     let timer = setInterval(countdown, 1000); // 1000 is milliseconds so 1 second passes everytime time-- occurs thus reducing time to 0 from 15

@@ -73,14 +73,15 @@ body{
 	font-style: normal;
 }
 
-.container .buttons{
+.container .buttons{  /* this applies to all of the buttons and is why they are laid out how they are */
 	display: flex;
 	justify-content: space-between;
 }
 
 
+
 .content button{
-	width: calc(100% / 2 - 10px);
+	width: calc(100% / 2 - 10px);  /* this took a lot of messing about with to find out the correct ratio for the buttons */
 	margin-top: 5px;
 	border: 1.5px solid transparent;
 	outline: none;
@@ -110,6 +111,7 @@ button:hover{ /* This is the hover for both buttons, It changes the colour when 
 	position: relative;
 	
 }
+/* this is for the box difficulty selection box^ */
 
 .dropContent{
 	display:none;
@@ -122,6 +124,8 @@ button:hover{ /* This is the hover for both buttons, It changes the colour when 
 	background: LightSkyBlue;
 	
 }
+
+/* setting position to absolute allows the drop down menu to display directly underneath the selection box */
 
 .dropContent a{
 	display:block;
@@ -136,10 +140,9 @@ button:hover{ /* This is the hover for both buttons, It changes the colour when 
 .dropDown a:hover{
 	color: black;
 }
+/* this changes the colour of the text for each webpage when hovering over them */
 
 .show{
 	display:block;
 }
-
-/* Went through a lot of trial and error to sort out positioning and colour scheme but settled on this approch*/
-/* This should horizontally align with the center of the screen but will be positioned near the top of the page */
+/* this  is toggeled when the selection box is clicked and it adds the "display: block" attribute to .dropcontent*/
