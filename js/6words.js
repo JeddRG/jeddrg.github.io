@@ -2,6 +2,6 @@
 // This is a website which will host an anagram game called "Scramble"
 // This is the array holding the words for the scramble 6 letter difficulty
 
-const 6words = [
+const sixwords = [
     {word: "kebabs"}, {word: "eagles"}, {word: "fabric"}, {word: "habits"}, {word: "jabbed"}, {word: "nachos"},
 ]

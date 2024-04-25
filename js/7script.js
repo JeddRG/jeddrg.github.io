@@ -1,7 +1,7 @@
 
 // Jedd Rixon Gibb 40485583 Coursework for SET08101 Web Technologies
 // This is a website which will host an anagram game called "Scramble"
-// This is the Javascript for the webpage
+// This is the Javascript for the 6 letter difficulty
 
 // ACKNOWLEDGEMENTS
 
@@ -34,11 +34,11 @@ const difficultyButton = document.getElementById('difficulty');
 
 const wordSelector = () => {
 
-        let rand = words[Math.floor(Math.random()*words.length)]; //this will select a random word from our words.js file and store as Object {word: "example"}
+        let rand = sevwords[Math.floor(Math.random()*sevwords.length)]; //this will select a random word from our words.js file and store as Object {word: "example"}
         console.log(rand); //checking the word is selected
        
         
-        let word = rand.word.split(""); //splits the chosen string into characters, is kept as Array(7) {'e','x','a','m','p','l','e'}
+        let word = rand.sevword.split(""); //splits the chosen string into characters, is kept as Array(7) {'e','x','a','m','p','l','e'}
         console.log(word); //checking that the split matches rand
 
 
@@ -64,10 +64,10 @@ const wordSelector = () => {
     //refresh
     function handleClick() {
         time = 15;                  //this resets the counter when 'refresh is pressed, there is a 1 second delay because of line 99, unsure how to fix
-        let rand = words[Math.floor(Math.random()*words.length)];
+        let rand = sevwords[Math.floor(Math.random()*sevwords.length)];
         console.log(rand);
 
-        let word = rand.word.split("");
+        let word = rand.sevword.split("");
         console.log(word);
 
         correctWord = word.join('');
